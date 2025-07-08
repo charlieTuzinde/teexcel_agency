@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeeXcel Digital Agency - Web Design & Digital Marketing</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="logo">TeeXcel Agency</a>
             <div class="nav-toggle" id="navToggle">
@@ -21,7 +21,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,11 +34,14 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Elevate Your Digital Presence</h1>
-                <p>We craft stunning websites and powerful digital marketing strategies to grow your business. <br>We are your digital solution!</p>
-                <a href="#contact" class="btn">Get Started</a>
+                <p>We craft stunning websites and powerful digital marketing strategies to grow your business. Let us help you stand out in the digital landscape.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get Started</a>
+                    <a href="#portfolio" class="btn btn-outline">View Our Work</a>
+                </div>
             </div>
             <div class="hero-image">
-                <img src="https://img.freepik.com/premium-photo/beautiful-young-african-american-people-office_219728-1309.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_items_boosted&w=740" alt="Digital Agency">
+                <img src="https://img.freepik.com/premium-photo/beautiful-young-african-american-people-office_219728-1309.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_items_boosted&w=740" alt="Digital Agency Team">
             </div>
         </div>
     </section>
@@ -45,29 +50,38 @@
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">We offer comprehensive digital solutions to help your business thrive online</p>
+            
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-code"></i>
                     <h3>Web Design</h3>
-                    <p>At TeeXcel Technologies, we specialize in professional website design that combines creativity, functionality, and responsive design.
-                        <br>
-<!-- We craft visually appealing and user-friendly websites tailored to meet the unique needs of businesses, organizations, and individuals. Whether you're launching a new brand or upgrading your online presence, our team is committed to delivering high-quality, modern websites that drive engagement and results. -->
-</p>
+                    <p>Beautiful, responsive websites tailored to your brand that engage visitors and drive conversions. We focus on user experience and modern design principles.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-laptop-code"></i>
                     <h3>Web Development</h3>
-                    <p>Custom websites built for performance and user experience.</p>
+                    <p>Custom websites built for performance, security and scalability. From simple brochure sites to complex web applications.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-bullhorn"></i>
                     <h3>Digital Marketing</h3>
-                    <p>Targeted campaigns to grow your audience and sales.</p>
+                    <p>Targeted campaigns across SEO, PPC, social media and email to grow your audience and increase sales.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-paint-brush"></i>
                     <h3>Branding</h3>
-                    <p>Create a memorable identity for your business.</p>
+                    <p>Create a memorable identity for your business with logo design, brand guidelines and visual assets.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-Commerce</h3>
+                    <p>Complete online store solutions with secure payment processing, inventory management and marketing tools.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Apps</h3>
+                    <p>Custom mobile applications for iOS and Android to engage your customers on the go.</p>
                 </div>
             </div>
         </div>
@@ -77,28 +91,131 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">Explore our recent projects and see what we can do for you</p>
+            
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://img.freepik.com/premium-photo/silhouettes-mother-child-background-forest-motivational-inscription-save-nature-before-it-s-too-late_129479-3922.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="projects 1">
+                    <img src="https://img.freepik.com/premium-photo/silhouettes-mother-child-background-forest-motivational-inscription-save-nature-before-it-s-too-late_129479-3922.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="Poster Design Project">
                     <div class="portfolio-overlay">
                         <h3>Quality Posters</h3>
-                        <a href="#" class="btn">View projectss</a>
-                        <!-- here i will add links to the vaious works that i have curried out in regard to this service that iam offering -->
+                        <p>Creative poster designs for environmental campaign</p>
+                        <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://img.freepik.com/free-photo/brand-trademark-marketing-website-plan-ui-concept_53876-120439.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="projects 2">
+                    <img src="https://img.freepik.com/free-photo/brand-trademark-marketing-website-plan-ui-concept_53876-120439.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="Corporate Branding Project">
                     <div class="portfolio-overlay">
                         <h3>Corporate Branding</h3>
-                        <a href="#" class="btn">View projects</a>
+                        <p>Complete brand identity for tech startup</p>
+                        <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/logo image.jpg" alt="projects 3">
+                    <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="Logo Design Project">
                     <div class="portfolio-overlay">
-                        <h3>logo Designs</h3>
-                        <a href="#" class="btn">View projects</a>
+                        <h3>Logo Designs</h3>
+                        <p>Custom logo creations for various businesses</p>
+                        <a href="#" class="btn">View Project</a>
                     </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://img.freepik.com/free-psd/digital-marketing-agency-facebook-cover-template_106176-1505.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="Social Media Campaign">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Campaign</h3>
+                        <p>Successful campaign for fashion brand</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://img.freepik.com/free-psd/website-template-online-store_23-2148876715.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="E-Commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Website</h3>
+                        <p>Online store with custom features</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="Mobile App Design">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Design</h3>
+                        <p>Fitness tracking application UI/UX</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">Don't just take our word for it - hear what our clients say</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>TeeXcel transformed our online presence completely. Our website traffic has increased by 300% since they redesigned our site and implemented their SEO strategies.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, GreenLife Organics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The team at TeeXcel delivered our e-commerce platform ahead of schedule and under budget. Their attention to detail and customer service is exceptional.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Founder, UrbanStyle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Working with TeeXcel on our rebranding was a game-changer. They understood our vision and brought it to life better than we could have imagined.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina Diallo">
+                        <div class="author-info">
+                            <h4>Amina Diallo</h4>
+                            <p>Marketing Director, AfriTech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-count="85">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-coffee"></i>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Cups of Coffee</div>
                 </div>
             </div>
         </div>
@@ -108,14 +225,95 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about-image">
-                <img src="https://img.freepik.com/premium-photo/beautiful-young-african-american-people-office_219728-1309.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="About TeeXcel">
+                <img src="https://img.freepik.com/premium-photo/diverse-business-team-meeting-office-they-are-looking-camera_236854-36345.jpg?uid=R116341362&ga=GA1.1.1560965112.1747812425&semt=ais_hybrid&w=740" alt="TeeXcel Team">
             </div>
             <div class="about-content">
                 <h2 class="section-title">About TeeXcel</h2>
-                <p>TeeXcel Digital Agency is a full-service digital marketing and web development agency based in Kenya. We help businesses establish and grow their online presence through innovative solutions.</p>
-                <p>Our team of experts combines creativity with technical expertise to deliver results that matter.</p>
-                <a href="#contact" class="btn">Learn More</a>
+                <p>TeeXcel Digital Agency is a full-service digital marketing and web development agency based in Kenya. Founded in 2020, we've grown from a small team of two to a thriving agency with 15 talented professionals.</p>
+                <p>Our mission is to help businesses of all sizes establish and grow their online presence through innovative, results-driven solutions. We combine creativity with technical expertise to deliver digital experiences that make an impact.</p>
+                <p>What sets us apart is our client-focused approach. We take the time to understand your business goals and challenges, then develop customized strategies to help you succeed in the digital space.</p>
+                
+                <h3>Our Team</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Team Member">
+                        <h3>David Mwangi</h3>
+                        <p>Creative Director</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Team Member">
+                        <h3>Grace Omondi</h3>
+                        <p>Lead Developer</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Our Process</h2>
+            <p class="section-subtitle">A structured approach to delivering exceptional results</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Discovery</h3>
+                    <p>We learn about your business, goals and challenges through in-depth consultations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Strategy</h3>
+                    <p>We develop a customized plan tailored to your specific needs and objectives.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Design</h3>
+                    <p>Our creative team brings your vision to life with mockups and prototypes.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Development</h3>
+                    <p>We build your solution with clean, efficient code and rigorous testing.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Launch</h3>
+                    <p>We deploy your project and provide training and support materials.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Optimize</h3>
+                    <p>We analyze performance and make adjustments to maximize results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest digital trends, tips, and exclusive offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
     </section>
 
@@ -123,27 +321,27 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to start your project? Contact us today for a free consultation.</p>
+            
             <div class="contact-grid">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
-                    <p><i class="fas fa-phone"></i><a href="tel: +254 708687167"></a>+254708687167</p>
-                    <!-- ill create this email for my company -->
-                    <p><i class="fas fa-envelope"></i> info@teexcel.com</p>
-                    <!-- here i will add social media links to my channels  -->
+                    <p><i class="fas fa-phone"></i> <a href="tel:+254708687167">+254 708 687 167</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@teexcel.com">info@teexcel.com</a></p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    
+                    <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                         <a href="#"><i class="fab fa-youtube"></i></a>
-                          <a href="#"><i class="fab fa-tele"></i></a>
-                        
-
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="return sendEmail()">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Your Name" required>
                     </div>
@@ -151,48 +349,139 @@
                         <input type="email" id="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="subject" id="subject" placeholder="subject" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" id="message" required></textarea>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
-                <!-- down there i was trying to make it send an email -->
-
-<!-- <script>
-    function sendEmail() {
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const subject = document.getElementById("subject").value|| "no subject";
-        const message = document.getElementById("message").value;
-        
-        
-        const mailtoLink = 
-        `mailto:charlestuzinde2022@?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent`(
-    Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}")}`;
-
-    window.location.href = mailtoLink;
-    return false; // Prevent actual form submission
-}
-
-
-</script> -->
-
-    
-    
-          
+            </div>
+        </div>
     </section>
-<!-- Footer -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 TeeXcel Digital Agency. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TeeXcel Agency</h3>
+                    <p>Your trusted partner for digital solutions that drive growth and innovation.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 708 687 167</p>
+                    <p><i class="fas fa-envelope"></i> info@teexcel.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TeeXcel Digital Agency. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Animate stats counter
+        function animateStats() {
+            const statElements = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            statElements.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const count = parseInt(stat.innerText);
+                const increment = Math.ceil(target / speed);
+                
+                if (count < target) {
+                    stat.innerText = count + increment;
+                    setTimeout(animateStats, 1);
+                } else {
+                    stat.innerText = target;
+                }
+            });
+        }
+        
+        // Trigger stats animation when section is in view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateStats();
+                observer.unobserve(statsSection);
+            }
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+        
+        // Simple form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the data to a server
+            // For this example, we'll just show an alert
+            alert(`Thank you, ${name}! Your message has been received. We'll contact you at ${email} soon.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
 </body>
 </html>
